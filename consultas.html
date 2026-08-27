@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Pets</title>
+
+    <style>
+        header {
+            height: 58px;
+            background: #064f43;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        nav {
+            display: flex;
+            gap: 120px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: #e0a32a;
+            color: #222;
+            padding: 6px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        main {
+            min-height: 537px;
+            display: flex;
+            justify-content: center;
+            padding-top: 18px;
+        }
+
+        .container {
+            width: 600px;
+            background: #064f43;
+            border: 2px solid #1299e8;
+            border-radius: 42px;
+            padding: 30px 38px 48px;
+        }
+
+        footer {
+            height: 75px;
+            background: #064f43;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            color: #d7e3de;
+            font-size: 10px;
+        }
+
+        .icones {
+            display: flex;
+            gap: 20px;
+            font-size: 28px;
+            color: #e0a32a;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="#">Horarios</a>
+            <a href="#">Inicio</a>
+        </nav>
+
+        <div class="perfil">
+            <img src="img/favicon.png" alt="perfil">
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <h1>Consulta de pets</h1>
+
+            <div class="formulario">
+
+                <div class="bloco">
+
+                    <h3>Seu Pet</h3>
+
+                    <div class="botoes">
+                        <button onclick="pet('Cachorro')">Cachorro</button>
+                        <button onclick="pet('Gato')">Gato</button>
+                    </div>
+
+                    <label>Nome</label>
+                    <input type="text">
+
+                    <label>Especie/Raca</label>
+                    <input type="text">
+
+                    <label>Idade</label>
+                    <input type="number">
+
+                </div>
+
+                <div class="bloco">
+
+                    <h3>Dados do Tutor</h3>
+
+                    <label>Nome</label>
+                    <input type="text">
+
+                    <label>Celular(Whatsapp)</label>
+                    <input type="tel">
+
+                    <label>E-mail</label>
+                    <input type="email">
+
+                    <label>Informacoes Adicionais</label>
+                    <input type="text">
+
+                </div>
+
+                <div class="bloco">
+
+                    <h3>Selecione o servico</h3>
+
+                    <label>Tipo de consulta</label>
+
+                    <select>
+                        <option>Clinica Geral</option>
+                        <option>Vacinacao</option>
+                        <option>Retorno</option>
+                    </select>
+
+                    <label>Especialidade</label>
+
+                    <select>
+                        <option>Especialidade</option>
+                        <option>Cardiologia</option>
+                        <option>Dermatologia</option>
+                        <option>Ortopedia</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+    <footer>
+
+        <div>
+            © Todos os direitos reservados
+        </div>
+
+        <div class="icones">
+            💬
+            📞
+        </div>
+
+    </footer>
+</body>
+
+</html>
